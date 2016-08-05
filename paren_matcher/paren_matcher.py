@@ -1,4 +1,4 @@
-# Write a function that return whether or not the input string has balanced parantheses
+# Write a function that return whether or not the input string has balanced parentheses
 # Balanced:
 #   '((()))'
 #   '(()())'
@@ -6,3 +6,13 @@
 #   '((()'
 #   '())('
 
+def counter(word):
+    a = word.count('(')
+    b = word.count(')')
+    if a == b:
+        return 'Balanced'
+    else:
+        return 'Not Balanced'
+
+print counter(' ((())) ')
+print counter(' ())( ')

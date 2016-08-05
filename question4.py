@@ -12,7 +12,6 @@ def main(size=10):
         symbols = random.choice('%&#$@')
         pwd = lcase + ucase + numbers + symbols
         return ''.join(random.choice(pwd) for p in range(size))
-
     elif user == "B"or user == "b":
         pwd = ('password', '2016', 'user')
         return random.choice(pwd)
