@@ -9,4 +9,13 @@
 
 # Solution:
 class InputOutString(object):
-    # code goes here
+    def __init__(self, string):
+        self.string = string
+
+    def printString(self):
+        print self.string.upper()
+
+x = InputOutString("john")
+x.printString()
+
+
