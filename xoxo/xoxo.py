@@ -7,7 +7,21 @@
 
 
 def Xoxo(str):
-    # code goes here
+    xs = 0
+    os = 0
+    for x in range(len(str)):
+        if str[x] == 'x':
+            xs += 1
+        elif str[x] == 'o':
+            os += 1
+
+    if xs == os:
+        return True
+    else:
+        return False
+
+
+
 
 
 
