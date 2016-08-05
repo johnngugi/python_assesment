@@ -11,7 +11,26 @@
 
 def CaesarCipher(string, num):
     # Your code goes here
+    lists = list(string)
+    empty = []
+    number = 0
+    for x in range(len(lists)):
+        number = ord(string[x]) + num
+        if number == 32:
+            continue
+        else:
+            lists[x] = chr(number)
+            empty.append(lists[x])
+
+    sentence = ''.join(empty)
+    print empty
+    print sentence
+
+CaesarCipher("john ngugi", 7)
 
 
 
-print "Cipertext:", CaesarCipher("A Crazy fool Z", 1)
+
+
+
+# print "Cipertext:", CaesarCipher("A Crazy fool Z", 1)
